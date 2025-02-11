@@ -1,5 +1,5 @@
 <?php
-require_once("restKezelo");
+require_once("restKezelo.php");
 require_once("FishingRod.php");
 
 class FishingRodrestKezelo extends Restkezelo

@@ -15,10 +15,10 @@ class Restkezelo
     public function gethttpstatusuzenet($statuskod)
     {
         $httpstatus = array(
-            200 -> 'OK'
-            400 -> 'Bad Request'
-            404 -> 'Not Found'
-            500 -> 'Internal Server Error'
+            200 => 'OK',
+            400 => 'Bad Request',
+            404 => 'Not Found',
+            500 => 'Internal Server Error',
         );
         return($httpstatus[$statuskod]) ? $httpstatus[$statuskod] : $httpstatus[500];
     }
