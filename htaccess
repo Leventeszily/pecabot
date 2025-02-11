@@ -1,0 +1,9 @@
+# Turn rewrite engine on
+Options +FollowSymlinks
+RewriteEngine on
+
+# map neat URL to internal URL
+RewriteRule ^fishingrod/list/$ index.php?view=all [nc,qsa]
+RewriteRule ^fishingrod/list/([0-9]+)/$ index.php?view=single&id=$1 [nc,qsa]
+RewriteRule ^fishingrod/type/([a-zA-ZáéíóöőúüűÁÉÍÓÖŐÚÜŰ]+)/$ index.php?view=tipus&tid=$1 [nc,qsa]
+RewriteRule ^fishingrod/.*$ index.php [nc,qsa]

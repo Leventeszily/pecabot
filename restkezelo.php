@@ -8,7 +8,7 @@ class Restkezelo
     {
         $statusuzenet=$this->gethttpstatusuzenet($statuskod);
 
-        header($tihs->httpversion. " " . $statuskod . " " . $statusuzenet);
+        header($this->httpversion. " " . $statuskod . " " . $statusuzenet);
         header("content-Type: application/json");
     }
 
